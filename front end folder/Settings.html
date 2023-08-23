@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <!-- link to font awesome -->
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css" />
+    <!-- link to stylesheet -->
+    <link rel="stylesheet" href="Settings.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <i
+          class="fa fa-arrow-left fa-lg"
+          style="width: 10px; color: white"
+          aria-hidden="true"
+          id="arrow"
+        ></i>
+        <h2 id="Settings">Settings</h2>
+      </div>
+      <div class="profile">
+        <h2>Profile</h2>
+        <div class="profile-card">
+          <img src="./images/PRO.jpg" alt="" class="profile-img" />
+          <br />
+          <form action="">
+            <label for="name">Username</label>
+            <input type="text" name="" id="username" />
+            <br />
+            <br />
+            <label for="email">Email</label>
+            <input type="email" name="" id="email" />
+            <br />
+            <br />
+            <button type="submit">Save</button>
+            <button type="submit">Cancel</button>
+          </form>
+        </div>
+      </div>
+      <div class="darkmode">
+        <h2>Dark Mode</h2>
+        <div class="btn">
+          <button type="submit">ON</button> <button type="submit">OFF</button>
+        </div>
+      </div>
+      <div class="logout">
+        <button type="submit">Log Out</button>
+      </div>
+    </div>
+    <script src="profile.js"></script>
+  </body>
+</html>

@@ -1,0 +1,236 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: rgb(48, 47, 47);
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+h2 {
+  color: white;
+  text-align: center;
+  top: 25px;
+  left: 50%;
+  letter-spacing: 10px;
+  text-decoration: underline;
+  font-size: 45px;
+}
+
+form {
+  width: 800px;
+  height: 60px;
+  background-color: transparent;
+  border-radius: 60px;
+  position: relative;
+  left: 400px;
+
+  top: 130px;
+  border: 1px solid;
+}
+input {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 60px;
+  font-size: 20px;
+  padding: 8px 40px 8px 3px;
+  border: none;
+  box-shadow: 0 5px 8px 3px;
+}
+input:focus {
+  outline: none;
+}
+button {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 50px;
+  height: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  background: none;
+  font-size: 18px;
+}
+.content {
+  color: white;
+  width: 55%;
+  height: auto;
+  padding-top: 18%;
+  padding-left: 8%;
+  font-size: 20px;
+}
+.search {
+  background-color: wheat;
+  width: 100%;
+  height: auto;
+  align-content: center;
+}
+button i {
+  color: rgb(93, 94, 95);
+}
+button:hover i {
+  color: rgb(162, 163, 163);
+}
+
+#header-links {
+  text-decoration: underline;
+  font-size: 20px;
+}
+a {
+  color: white;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+  top: 20px;
+  left: 20%;
+  letter-spacing: 5px;
+  text-decoration: underline;
+  font-size: 30px;
+}
+
+.accordian {
+  width: 25%;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  display: block;
+  margin-left: 67%;
+  margin-bottom: 80%;
+  margin-top: -37%;
+}
+.accordian .accordian-title {
+  color: black;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.accordian .content-container .question {
+  padding: 18px 0px;
+  font-size: 18px;
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  position: relative;
+}
+.accordian .content-container .question::after {
+  content: "+";
+  position: absolute;
+  right: -5px;
+}
+.accordian .content-container .answer {
+  padding-top: 15px;
+  font-size: 18px;
+  line-height: 1.2;
+  width: 100%;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+}
+/* Javascript styling link */
+.accordian .content-container.active .answer {
+  height: 100px;
+}
+.accordian .content-container.active .question {
+  font-size: 15px;
+  transition: 0.5s;
+}
+.accordian .content-container.active .question::after {
+  content: "-";
+  font-size: 20px;
+  transition: 0.5s;
+}
+@media screen and (max-width: 425px) {
+  form {
+    width: 43%;
+    height: 18px;
+    background-color: transparent;
+    border-radius: 60px;
+    position: relative;
+    left: 80px;
+    font-size: 18px;
+    top: 10px;
+  }
+  input {
+    font-size: 12px;
+  }
+  button {
+    position: absolute;
+    right: -25px;
+    font-size: 12px;
+    width: 25px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+
+  button:hover i {
+    color: rgb(162, 163, 163);
+  }
+  .accordian {
+    width: 50%;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    display: block;
+    margin-left: 21%;
+    font-size: 21px;
+    margin-top: 15%;
+    position: relative;
+    left: -30px;
+  }
+  .content {
+    width: 60%;
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  form {
+    width: 50%;
+    height: 18px;
+    background-color: transparent;
+    border-radius: 60px;
+    position: relative;
+    left: 23%;
+    font-size: 18px;
+    top: 50%;
+  }
+  button {
+    position: absolute;
+    right: -10%;
+    top: 8px;
+    font-size: 12px;
+    width: 25px;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    background: none;
+  }
+  input {
+    font-size: 11px;
+  }
+
+  .accordian {
+    width: 50%;
+    height: auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    display: block;
+    margin-left: 21%;
+    font-size: 21px;
+    margin-top: 15%;
+    position: relative;
+    left: -30px;
+  }
+}

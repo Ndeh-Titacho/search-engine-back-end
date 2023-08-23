@@ -1,0 +1,159 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: auto;
+  background-color: rgb(47, 48, 48);
+  position: relative;
+}
+.header {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 20px;
+  border-bottom: 1px solid grey;
+}
+.header i {
+  padding-top: 35px;
+  position: absolute;
+  left: 2%;
+}
+#Settings {
+  text-align: center;
+}
+h2 {
+  padding-top: 15px;
+  font-size: 30px;
+  margin-left: 6%;
+  color: white;
+}
+.profile h2::before {
+  content: "+";
+  position: absolute;
+  left: 2%;
+}
+.profile-card {
+  position: relative;
+  width: 600px;
+  height: auto;
+  background: rgb(48, 48, 111);
+  left: 30%;
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin-bottom: 3%;
+}
+.profile-card .profile-img {
+  height: 100%;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: relative;
+  left: 23%;
+  border: 2px white solid;
+}
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+input {
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: transparent;
+  outline: none;
+}
+button {
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 5px;
+}
+button:hover {
+  background: url(./images/pexels-codioful-\(formerly-gradienta\)-7135037jpg);
+}
+.profile {
+  width: 100%;
+  height: 650px;
+  padding: 10px auto;
+  border-bottom: 1px solid black;
+}
+.darkmode {
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+.darkmode h2::before {
+  content: "+";
+  position: absolute;
+  left: 2%;
+}
+.darkmode button {
+  width: 35px;
+
+  cursor: pointer;
+  height: 25px;
+  display: inline-block;
+  text-align: center;
+}
+.btn {
+  position: relative;
+  left: 7%;
+}
+/* button::before {
+  content: "+";
+  position: absolute;
+  left: 2%;
+} */
+.logout button {
+  width: 60px;
+  height: 20px;
+  margin-left: 7.5%;
+  margin-top: 1%;
+}
+@media screen and (max-width: 600px) {
+  .profile-card {
+    position: relative;
+    width: 300px;
+    height: auto;
+    background: wheat;
+    left: 15%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  .profile-card .profile-img {
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    left: 15%;
+    border: 2px white solid;
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile-card {
+    position: relative;
+    width: 550px;
+    height: auto;
+    background: wheat;
+    left: 15%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  .profile-card .profile-img {
+    height: 100%;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    position: relative;
+    left: 30%;
+    border: 2px white solid;
+  }
+}

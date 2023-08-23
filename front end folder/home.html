@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+  
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css">
+    <link rel="stylesheet" href="file:///D:/css/css/all.css">
+    <link rel="stylesheet" href="home.css">
+  </head>
+  <body>
+    <div id="sideNav">
+      <nav>
+          <ul>
+              <li><a href="#">
+                <i class="fa-solid fa-plus" style="color: #ffffff;"></i>New Tab</a></li>
+              <li><a href="Settings.html">
+                <i class="fa-solid fa-gear" style="color: #ffffff;"></i>Settings</a></li>
+              <li><a href="#">
+                <i class="fa-regular fa-message" style="color: #ffffff;"></i>Feedback</a></li>
+          </ul>
+          
+      </nav>
+      <div id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+    
+      </div>
+  </div>
+  
+  <script>
+    var menuBtn = document.getElementById("menuBtn")
+    var sideNav = document.getElementById("sideNav")
+    var menu = document.getElementById("menu")
+
+    sideNav.style.right="-250px";
+
+    menuBtn.onclick = function(){
+        if(sideNav.style.right=="-250px"){
+            sideNav.style.right= "0";
+            menu.src ="images/bulb.png";
+        }
+        else{
+            sideNav.style.right = "-250PX";
+            menu.src ="images/menu.png";
+        }
+    }
+</script>
+     <div class="container">
+      <div class="center-content">   
+        <h1>Nexinch</h1>
+            <div class="box">
+              <form action=""><input type="text" value="" placeholder="Search" required>
+               </form>
+              <button type="submit" id="search-bar"><i class="fa fa-search" aria-hidden="true"></i></button>
+              </div>
+            <div class="sbutton">
+              <button id="extra1">Search Hisory</button>
+              <button id="extra2">I'm Feeling Lucky</button>
+            </div>
+        </div>
+        <div class="sinbutton">
+
+<button type="submit" id="signin"><a href="signup.html">SignUp</a> </button>
+        </div>
+    </div>
+        </form>
+      </div>
+      </div>
+     </div>
+  </body>
+</html>
